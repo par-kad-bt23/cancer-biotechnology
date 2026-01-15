@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Techniques Used | Cancer Biotechnology</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fb;
+      color: #333;
+	  margin-top: 160px;
+    }
+    header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #7b2cbf, #5a189a);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  padding-top: 54px;
+}
+
+    nav {
+  position: fixed;
+  top: 153px; /* height of header */
+  left: 0;
+  width: 100%;
+  background-color: #240046;
+  padding: 10px;
+  text-align: center;
+  z-index: 999;
+}
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background: white;
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 1100px;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #5a189a;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: #7b2cbf;
+    }
+
+    .content-block {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+
+    ul {
+      line-height: 1.8;
+    }
+
+    footer {
+      background-color: #240046;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+	
+		html {
+  scroll-behavior: smooth;
+} 
+section {
+  scroll-margin-top: 170px;
+}
+
+    @media (max-width: 768px) {
+      .content-block {
+        flex-direction: column;
+      }
+    }
+	
+	.accordion {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.accordion-header {
+  width: 100%;
+  background-color: #5a189a;
+  color: white;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.accordion-header:hover {
+  background-color: #7b2cbf;
+}
+
+.accordion-content {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+.accordion-content ul {
+  margin-left: 20px;
+}
+.accordion-header {
+  position: relative;
+  padding-right: 45px; /* space for icon */
+}
+
+/* Plus icon by default */
+.accordion-header::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+/* Minus icon when active */
+.accordion-header.active::after {
+  content: "−";
+}
+@media (max-width: 768px) {
+  .accordion-content img {
+    float: none;
+    display: block;
+    margin: 0 auto 15px auto;
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Cancer Biotechnology</h1>
+</header>
+ 
+<nav>
+  <a href="cancer biotech.html">Home</a>
+  <a href="types.html">Types of Cancer</a>
+  <a href="cellculture.html">Cell Culture</a>
+  <a href="techniques.html">Techniques</a>
+  <a href="therapy.html">Therapy</a>
+  <a href="future.html">Future Scope</a>
+</nav>
+
+<section>
+<br/>
+  <h2>⚕️ Biotechnology-Based Cancer Therapies</h2>
+<hr>
+<br/>
+
+  <div class="accordion">
+
+    <!-- Targeted Drug Therapy -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Targeted Drug Therapy
+      </button>
+      <div class="accordion-content">
+        <p>
+          <img src="D:/Office Files/targeted_drug_therapy.webp" 
+               alt="Targeted Drug Therapy" 
+               style="float:right; width:45%; max-width:430px; margin-left:20px; margin-bottom:15px; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1);">
+          Targeted drug therapy involves using drugs that specifically target molecules involved in cancer cell growth, division, or survival, without affecting normal healthy cells.
+        </p>
+        <ul>
+          <li>Targets cancer-specific proteins or signaling pathways (e.g., HER2, tyrosine kinases)</li>
+          <li>Interferes with proliferation, angiogenesis, or survival signals</li>
+          <li>Reduces side effects compared to conventional chemotherapy</li>
+        </ul>
+        <p><b>Examples:</b> Trastuzumab for breast cancer, Imatinib for chronic myeloid leukemia</p>
+      </div>
+    </div>
+
+    <!-- Immunotherapy -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Immunotherapy
+      </button>
+      <div class="accordion-content">
+        <p>
+          <img src="D:/Office Files/immunotherapy.png" 
+               alt="Immunotherapy" 
+               style="float:right; width:45%; max-width:430px; margin-left:20px; margin-bottom:15px; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1);">
+          Immunotherapy uses the body’s immune system to recognize and destroy cancer cells.
+        </p>
+        <ul>
+          <li>Checkpoint inhibitors: Block PD-1/PD-L1 or CTLA-4 to activate T-cells</li>
+          <li>CAR-T cell therapy: Patient’s T-cells are genetically engineered to attack cancer cells</li>
+          <li>Cancer vaccines: Stimulate immune response against tumor antigens</li>
+          <li>Cytokine therapy: Uses interleukins or interferons to boost immunity</li>
+        </ul>
+        <p>Effective for melanoma, lung cancer, lymphoma, and leukemia</p>
+      </div>
+    </div>
+
+    <!-- Gene Therapy -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Gene Therapy
+      </button>
+      <div class="accordion-content">
+        <p>
+          <img src="D:/Office Files/gene_therapy.jpg" 
+               alt="Gene Therapy" 
+               style="float:right; width:45%; max-width:430px; margin-left:20px; margin-bottom:15px; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1);">
+          Gene therapy involves introducing, removing, or modifying genes within cancer cells to treat disease.
+        </p>
+        <ul>
+          <li>Replace defective tumor suppressor genes (e.g., p53)</li>
+          <li>Introduce genes that induce apoptosis in cancer cells</li>
+          <li>Deliver genes that enhance sensitivity to chemo or radiation</li>
+          <li>Use viral vectors for targeted gene delivery</li>
+        </ul>
+        <p>Experimental therapy for solid tumors and hematologic cancers</p>
+      </div>
+    </div>
+
+    <!-- Cancer Vaccines -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Cancer Vaccines
+      </button>
+      <div class="accordion-content">
+        <p>
+          <img src="D:/Office Files/cancer_vaccine.jpg" 
+               alt="Cancer Vaccines" 
+               style="float:right; width:45%; max-width:430px; margin-left:20px; margin-bottom:15px; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1);">
+          Cancer vaccines stimulate the immune system to recognize and attack cancer cells.
+        </p>
+        <ul>
+          <li>Preventive vaccines: Target viruses that cause cancer (e.g., HPV vaccine)</li>
+          <li>Therapeutic vaccines: Stimulate immune response against existing tumors</li>
+        </ul>
+        <p>Examples: Sipuleucel-T for prostate cancer</p>
+      </div>
+    </div>
+
+    <!-- Personalized Medicine -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Personalized Medicine
+      </button>
+      <div class="accordion-content">
+        <p>
+          <img src="D:/Office Files/personalized_medicine.jpg" 
+               alt="Personalized Medicine" 
+               style="float:right; width:45%; max-width:430px; margin-left:20px; margin-bottom:15px; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1);">
+          Personalized medicine tailors cancer treatment based on an individual patient’s genetic, molecular, and cellular profile.
+        </p>
+        <ul>
+          <li>Genomic sequencing to identify mutations and actionable targets</li>
+          <li>Selects therapies most effective for the patient’s cancer type</li>
+          <li>Monitors response to adjust treatment dynamically</li>
+        </ul>
+        <p>Maximizes effectiveness, reduces toxicity, and improves survival</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<footer>
+  <p>Prepared by: Biotechnology Student</p>
+  <p>Subject: Cancer Biotechnology</p>
+</footer>
+<script>
+  const headers = document.querySelectorAll(".accordion-header");
+
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      const isOpen = header.classList.contains("active");
+
+      // Close all accordions
+      document.querySelectorAll(".accordion-content").forEach(c => {
+        c.style.display = "none";
+      });
+      document.querySelectorAll(".accordion-header").forEach(h => {
+        h.classList.remove("active");
+      });
+
+      // Toggle current accordion
+      if (!isOpen) {
+        content.style.display = "block";
+        header.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
